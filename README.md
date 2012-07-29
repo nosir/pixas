@@ -1,2 +1,1 @@
-pixas
-=====
+Pixas is an Open Source ActionScript engine, which enables programmers to build isometric pixel Flash Applications with pure ActionScript3. With Pixas you can easily add isometric pixel elements like brick, cube, pyramid, map layer to your applications.
