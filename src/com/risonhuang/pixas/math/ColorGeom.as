@@ -42,7 +42,7 @@
 		 */
 		public static function applyBrightness (color : uint, brightness : int,highlight:Boolean = false) :uint 
 		{
-                
+            var a: int = ((color >>> 24) & 0x000000FF);
 			var r :  int = ((color>>>16) & 0x000000FF);
 			var g : int = ((color>>> 8) & 0x000000FF);
 			var b : int = ((color) & 0x000000FF);
@@ -72,7 +72,7 @@
 			g = Math.max (0,Math.min (g,255));
 			b = Math.max (0,Math.min (b,255));
 
-			return (r << 16) | (g << 8) | b;
+			return (a << 24) | (r << 16) | (g << 8) | b;
 		}
 	}
 

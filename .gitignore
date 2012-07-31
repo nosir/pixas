@@ -1,4 +1,5 @@
 # Build and Release Folders
+local/
 bin-debug/
 bin-release/
 
