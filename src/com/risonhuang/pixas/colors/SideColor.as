@@ -9,6 +9,7 @@
 	 */
 	public class SideColor extends AbstractColor
 	{
+		private static const BRIGHTNESS_GAIN : int = - 20;	
 		
 		/**
 		 * Construct
@@ -22,6 +23,21 @@
 			
 			border = ColorGeom.get32(_border);
 			inner = ColorGeom.get32(_inner);
+		}
+		
+		/**
+		 * get color instance by count transition with inner side
+		 *
+		 * @param	_inner	[optional]	The _inner color
+		 * @return	A SideColor instance
+		 */			
+		public static function getByInnerColor(_inner:uint):SideColor
+		{
+			return new SideColor
+			(
+				ColorGeom.applyBrightness(_inner, BRIGHTNESS_GAIN * 4),
+				_inner
+			);
 		}
 	}
 }
