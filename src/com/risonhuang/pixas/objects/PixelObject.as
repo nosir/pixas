@@ -1,6 +1,7 @@
 ﻿package com.risonhuang.pixas.objects 
 {
 	import com.risonhuang.pixas.math.Coord3D;
+	import flash.display.Bitmap;
 	import flash.display.Sprite;
 	
 	/**
@@ -20,6 +21,7 @@
 	public class PixelObject extends Sprite
 	{
 		
+		private var bmp:Bitmap;
 		private var pos:Coord3D;
 		private var pmt:AbstractPrimitive;
 		
@@ -31,10 +33,12 @@
 		 */
 		public function PixelObject(_pmt:AbstractPrimitive = null,_pos:Coord3D = null) 
 		{
+			bmp = null;
 			
 			if (_pmt != null)
 			{
-				generate(_pmt);
+				pmt = _pmt;
+				generate();
 			}
 			
 			if (_pos == null)
@@ -72,7 +76,7 @@
 		public function set primitive(_pmt:AbstractPrimitive):void
 		{
 			pmt = _pmt;
-			generate(pmt);
+			generate();
 		}
 		
 		/**
@@ -161,11 +165,19 @@
 			return pos.z;
 		}
 		
+		/**
+		 * @return The bitmap of the pixel object
+		 */
+		public function get bitmap():Bitmap
+		{
+			return bmp;
+		}
 		
-		private function generate(_pmt:AbstractPrimitive):void
+		private function generate():void
 		{
 			removeAllChildren();
-			addChild(_pmt.generate());
+			bmp = pmt.generate();
+			addChild(bmp);
 		}
 		
 		private function place():void
