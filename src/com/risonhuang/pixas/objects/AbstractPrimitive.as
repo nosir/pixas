@@ -90,7 +90,10 @@
 			{
 				throw new Error("BitmapData has not been initilized.");
 			}
+			
 			src_bmd = new BitmapData(w, h , true , 0x00FFFFFF);
+			//debug
+			//src_bmd = new BitmapData(w, h , true , 0xFFFFFFFF);
 		}
 		
 		public function toString():String

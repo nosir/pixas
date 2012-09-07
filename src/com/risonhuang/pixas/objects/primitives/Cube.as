@@ -110,6 +110,8 @@
 				po.addChild(light_bm);
 			}
 			
+			src_bmd.lock();
+			
 			src_bmd.draw(po);
 			
 			//fix the middle light
@@ -120,6 +122,7 @@
 					src_bmd.setPixel32(dms.xAxis - 2, (dms.xAxis + dms.yAxis) / 2 - 1 + i, color.left);
 				}
 			}
+			src_bmd.unlock();
 		}
 		
 		private function generateHighLight():Bitmap

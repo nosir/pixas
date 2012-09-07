@@ -40,6 +40,16 @@
 		 * The horizontal colors for elements of certain primitive
 		 */
 		public var horizontal : uint;
+
+		/**
+		 * The left slot side colors for elements of certain primitive
+		 */
+		public var leftSlope:uint;
+		
+		/**
+		 * The right slot side colors for elements of certain primitive
+		 */
+		public var rightSlope:uint;
 		
 		public function AbstractColor() 
 		{
