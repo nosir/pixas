@@ -3,7 +3,7 @@
 	import  com.risonhuang.pixas.math.ColorGeom;
 	
 	/**
-	 * The CubeColor class is the olor obj for cube
+	 * The CubeColor class is the color obj for cube
 	 *
 	 * @author	max
 	 */
@@ -41,7 +41,7 @@
 		/**
 		 * get color instance by count transition with horizontal side
 		 *
-		 * @param	_horizontal	[optional]	The horizontal color
+		 * @param	_horizontal The horizontal color
 		 * @return	An CubeColor instance
 		 */		
 		public static function getByHorizontalColor(_horizontal:uint):CubeColor

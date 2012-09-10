@@ -12,7 +12,7 @@ package com.risonhuang.pixas.objects.primitives
 	/**
 	 * The SlopeNorth class is the primitive for constructing SlopeNorth
 	 * <p/>
-	 * The width could be different depends on the dimension
+	 * The size could be different depends on the dimension
 	 *
 	 * @author	max
 	 */

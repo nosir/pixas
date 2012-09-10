@@ -3,7 +3,7 @@
 	import com.risonhuang.pixas.math.ColorGeom;
 
 	/**
-	 * The SideColor class is the olor obj for x or y side
+	 * The SideColor class is the color obj for x or y side
 	 *
 	 * @author	max
 	 */
@@ -28,7 +28,7 @@
 		/**
 		 * get color instance by count transition with inner side
 		 *
-		 * @param	_inner	[optional]	The _inner color
+		 * @param	_inner	The _inner color
 		 * @return	A SideColor instance
 		 */			
 		public static function getByInnerColor(_inner:uint):SideColor

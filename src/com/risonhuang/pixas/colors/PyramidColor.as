@@ -3,7 +3,7 @@ package com.risonhuang.pixas.colors
 	import  com.risonhuang.pixas.math.ColorGeom;
 	
 	/**
-	 * The PyramidColor class is the olor obj for pyramid
+	 * The PyramidColor class is the color obj for pyramid
 	 *
 	 * @author	max
 	 */
@@ -38,7 +38,7 @@ package com.risonhuang.pixas.colors
 		/**
 		 * get color instance by count transition with right side
 		 *
-		 * @param	_right	[optional]	The right color
+		 * @param	_right	The right color
 		 * @return	A PyramidColor instance
 		 */		
 		public static function getByRightColor(_right:uint):PyramidColor

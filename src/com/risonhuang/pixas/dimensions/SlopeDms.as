@@ -1,7 +1,7 @@
 package com.risonhuang.pixas.dimensions 
 {
 	/**
-	 * The SlopeDms class represents the dimensions of a brick
+	 * The SlopeDms class represents the dimensions of a slope
 	 *
 	 * @author	max
 	 */

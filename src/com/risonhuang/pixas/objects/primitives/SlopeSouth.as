@@ -8,7 +8,7 @@ package com.risonhuang.pixas.objects.primitives
 	/**
 	 * The SlopeSouth class is the primitive for constructing SlopeSouth
 	 * <p/>
-	 * The width could be different depends on the dimension
+	 * The size could be different depends on the dimension
 	 *
 	 * @author	max
 	 */

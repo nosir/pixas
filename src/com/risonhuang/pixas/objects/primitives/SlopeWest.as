@@ -12,7 +12,7 @@ package com.risonhuang.pixas.objects.primitives
 	/**
 	 * The SlopeWest class is the primitive for constructing SlopeWest
 	 * <p/>
-	 * The width could be different depends on the dimension
+	 * The size could be different depends on the dimension
 	 *
 	 * @author	max
 	 */

@@ -8,7 +8,7 @@ package com.risonhuang.pixas.objects.primitives
 	/**
 	 * The SlopeEast class is the primitive for constructing SlopeEast
 	 * <p/>
-	 * The width could be different depends on the dimension
+	 * The size could be different depends on the dimension
 	 *
 	 * @author	max
 	 */
