@@ -8,3 +8,6 @@ bin-release/
 .flexProperties
 .settings/
 .project
+.idea/
+
+src/com/risonhuang/pixas/.idea
